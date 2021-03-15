@@ -1,0 +1,21 @@
+{
+  "name": "react-wechat-emoji",
+  "version": "1.0.0",
+  "description": "A WeChat like Emoji component for React.js",
+  "main": "dist/index.js",
+  "repository": "git@github.com:hexh250786313/react-wechat-emoji.git",
+  "author": "Howard He <250786313@qq.com>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "wechat",
+    "emoji"
+  ],
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "react": "^17.0.1"
+  }
+}
