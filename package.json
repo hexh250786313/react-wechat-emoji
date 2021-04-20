@@ -1,6 +1,6 @@
 {
   "name": "react-wechat-emoji",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A WeChat like Emoji component for React.js",
   "main": "dist/index.js",
   "repository": "https://github.com/hexh250786313/react-wechat-emoji.git",
