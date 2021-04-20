@@ -1,12 +1,10 @@
-import { StrictMode } from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from 'react-dom'
+import React from 'react'
+import App from './App'
 
-import Emoji from './Emoji'
-
-const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <StrictMode>
-    <Emoji />
-  </StrictMode>,
-  rootElement
-);
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+)
