@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react'
 import EmojiItem from './EmojiItem'
 import emojis from './emojis'
-import './emoji.css'
+import './assets/emoji.css'
 
 const EMOJI_SOURCE =
   'https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/28ff7eab6bb10c9039509d2c8e52a7416174582c.png'
@@ -39,7 +39,7 @@ function emojiReducer (prevState, action) {
   }
 }
 
-function Emoji (props) {
+export function Emoji (props) {
   const [state, dispatch] = useReducer(emojiReducer, emojiInitialState)
 
   const handleClick = (payload) => {
@@ -53,7 +53,7 @@ function Emoji (props) {
     <div style={{ height: `${props.height}px` }} className='area'>
       <div className='list'>
         {state.recentUsed.length && (
-          <>
+          <React.Fragment>
             <div className='head'>最近使用</div>
             {state.recentUsed.map((item, index) => (
               <EmojiItem
@@ -64,7 +64,7 @@ function Emoji (props) {
                 onClick={handleClick}
               />
             ))}
-          </>
+          </React.Fragment>
         )}
         <div className='head'>所有表情</div>
         {emojis.map((item, index) => (
@@ -82,4 +82,3 @@ function Emoji (props) {
   )
 }
 
-export default Emoji

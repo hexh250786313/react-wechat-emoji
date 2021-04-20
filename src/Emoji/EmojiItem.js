@@ -1,6 +1,6 @@
 import React from 'react'
-import './emoji.css'
-import './position.css'
+import './assets/emoji.css'
+import './assets/position.css'
 
 const EMOJI_SIZE = 40
 const padding = 15

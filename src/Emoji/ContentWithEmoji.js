@@ -1,4 +1,4 @@
-import './position.css'
+import './assets/position.css'
 import { textType, parseEmoji } from './parse'
 
 const EMOJI_SOURCE =

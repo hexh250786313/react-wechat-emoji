@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Emoji, { ContentWithEmoji } from './Emoji'
+import { Emoji, ContentWithEmoji } from './Emoji'
 
 function App () {
   const [text, setText] = useState('')

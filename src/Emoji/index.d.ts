@@ -37,8 +37,7 @@ type ContentWithEmojiProps = {
   emojiScale?: number;
 };
 
-const Emoji: React.FC<EmojiProps>;
 
 export function parseEmoji(content: string): EmojiContentType[];
 export const ContentWithEmoji: React.FC<ContentWithEmojiProps>;
-export default Emoji;
+export const Emoji: React.FC<EmojiProps>;

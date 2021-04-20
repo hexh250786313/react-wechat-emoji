@@ -1,6 +1,6 @@
 {
   "name": "react-wechat-emoji",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A WeChat like Emoji component for React.js",
   "main": "lib/index.js",
   "typings": "./src/Emoji/index.d.ts",
@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "start": "react-scripts start",
-    "build": "babel src/components/Emoji --out-dir lib"
+    "build": "babel src/Emoji --out-dir lib && cp -r src/Emoji/assets lib"
   },
   "eslintConfig": {
     "extends": [
@@ -44,12 +44,13 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-eslint": "10.1.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "babel-eslint": "10.1.0",
+    "babel-preset-stage-2": "^6.24.1",
     "eslint": "7.17.0",
-    "lint-staged": "10.5.3",
     "husky": "4.3.7",
+    "lint-staged": "10.5.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "^4.0.1"
