@@ -1,3 +1,4 @@
+import React from 'react'
 import './assets/position.css'
 import { textType, parseEmoji } from './parse'
 
