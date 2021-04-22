@@ -1,32 +1,25 @@
 import React from 'react'
 import './assets/position.css'
+import './assets/emoji.css'
 import { textType, parseEmoji } from './parse'
-
-const EMOJI_SOURCE =
-  'https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/28ff7eab6bb10c9039509d2c8e52a7416174582c.png'
+import { EMOJI_SOURCE } from './constants'
 
 export const ContentWithEmoji = ({
-  content,
+  content = '',
   bodyStyle = {},
   textStyle = {},
-  emojiScale = 0.5
+  emojiScale = 0.5,
+  source
 }) => {
   if (!Array.isArray(content)) {
     content = parseEmoji(content)
   }
   return (
-    <div
-      style={{
-        ...bodyStyle,
-        display: 'inline-block',
-        wordBreak: 'break-all',
-        whiteSpace: 'pre-wrap'
-      }}
-    >
+    <div className='wemoji-content' style={bodyStyle}>
       {content.map((item, index) => {
         if (item.type === textType.normal) {
           return (
-            <div key={index} style={{ display: 'inline-block', ...textStyle }}>
+            <div key={index} className='wemoji-content__text' style={textStyle}>
               {item.content}
             </div>
           )
@@ -35,17 +28,16 @@ export const ContentWithEmoji = ({
           <div
             style={{
               height: `${64 * emojiScale}px`,
-              width: `${64 * emojiScale}px`,
-              display: 'inline-block',
-              verticalAlign: 'text-bottom'
+              width: `${64 * emojiScale}px`
             }}
+            className='wemoji-content__emoji'
             key={index}
           >
             <div
               style={{
                 transformOrigin: '0px 0px',
                 transform: `scale(${emojiScale})`,
-                backgroundImage: `url(${EMOJI_SOURCE})`
+                backgroundImage: `url(${source || EMOJI_SOURCE})`
               }}
               className={item.imageClass}
             />

@@ -1,11 +1,11 @@
-.area {
+.wemoji-area {
   height: 300px;
   background-color: #ededed;
   position: relative;
   width: 100%;
 }
 
-.list {
+.wemoji-list {
   padding-left: 15px;
   padding-right: 15px;
   padding: 0 10px;
@@ -19,13 +19,13 @@
   font-size: 0;
 }
 
-.list::-webkit-scrollbar {
+.wemoji-list::-webkit-scrollbar {
   width: 0;
   height: 0;
   color: transparent;
 }
 
-.head {
+.wemoji-head {
   margin: 14px 5px 8px;
   margin-top: 8px;
   color: #000;
@@ -33,7 +33,7 @@
   text-align: left;
 }
 
-.item {
+.wemoji-item {
   display: inline-block;
   position: relative;
   width: 40px;
@@ -42,11 +42,26 @@
   line-height: 40px;
 }
 
-.item__icon {
+.wemoji-item__icon {
   position: absolute;
   top: 4px;
   left: 4px;
   display: inline-block;
   transform-origin: 0 0;
   transform: scale(0.5);
+}
+
+.wemoji-content {
+  display: inline-block;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+.wemoji-content__text {
+  display: inline-block;
+}
+
+.wemoji-content__emoji {
+  display: inline-block;
+  vertical-align: text-bottom;
 }

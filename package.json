@@ -13,7 +13,7 @@
     "emoji"
   ],
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "babel src/Emoji --out-dir lib && cp -r src/Emoji/assets lib"
   },
   "eslintConfig": {
