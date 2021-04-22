@@ -119,6 +119,12 @@ type EmojiContentType = {
 | emojiScale |       `0.5`       |              `number`              | 表情的显示大小                                               |
 |   source   | bilibili 图床地址 |              `string`              | Emoji 雪碧图地址，强烈建议使用自己的 CDN 地址，默认是 bilibili 图床地址，稳定性未知 |
 
+### 表情雪碧图
+
+强烈建议使用自己的 CDN 地址，默认是 bilibili 图床地址，稳定性未知。右键保存下方的图片到你的 CDN，组件的 `source` 填上你的 CDN 地址
+
+![xuebi](https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png)
+
 ## Api
 
 ### parseEmoji

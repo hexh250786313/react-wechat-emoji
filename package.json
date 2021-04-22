@@ -1,6 +1,6 @@
 {
   "name": "react-wechat-emoji",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A WeChat like Emoji component for React.js",
   "main": "lib/index.js",
   "typings": "./src/Emoji/index.d.ts",
