@@ -113,7 +113,7 @@ type EmojiContentType = {
 
 |    prop    |      default      |                type                | description                                                  |
 | :--------: | :---------------: | :--------------------------------: | ------------------------------------------------------------ |
-|  content   |       none        | `string | Array<EmojiContentType>` | 内容                                                         |
+|  content   |       none        | `string \| Array<EmojiContentType>` | 内容                                                         |
 | bodyStyle  |       none        |       `React.CSSProperties`        | 外层样式                                                     |
 | textStyle  |       none        |       `React.CSSProperties`        | 文本样式                                                     |
 | emojiScale |       `0.5`       |              `number`              | 表情的显示大小                                               |
