@@ -123,7 +123,7 @@ type EmojiContentType = {
 
 强烈建议使用自己的 CDN 地址，默认是 bilibili 图床地址，稳定性未知。右键保存下方的图片到你的 CDN，组件的 `source` 填上你的 CDN 地址
 
-![xuebi](https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png)
+![xuebi](https://images.weserv.nl/?url=https://i0.hdslb.com/bfs/article/28ff7eab6bb10c9039509d2c8e52a7416174582c.png)
 
 ## Api
 
